@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  public toggleMenu: Boolean = false; 
   title = 'ielts_primestep';
+  public handleClick = () => {
+    this.toggleMenu = !this.toggleMenu;
+  }
 }
